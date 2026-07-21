@@ -1,0 +1,10 @@
+services:
+  nostr-relay:
+    image: scsibug/nostr-rs-relay:latest
+    container_name: local-nostr-relay
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config.toml:/app/config.toml
+      - ./data:/app/data
+    restart: unless-stopped
