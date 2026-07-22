@@ -1,0 +1,9 @@
+{
+  "app": "nostr",
+  "disks": [
+    {
+      "name": "kian",
+      "mountTo": "/app/data"
+    }
+  ]
+}
